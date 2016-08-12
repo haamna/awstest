@@ -15,8 +15,8 @@ app.use('/api/init',init_routes);
 
 
 models.sequelize.sync().then(function(){
-	app.listen(8080,function(){
-		console.log('Server started at http://localhost:8080');
+	app.listen(80,function(){
+		console.log('Server started at http://localhost:80');
 		console.log('To Stop server press Ctrl + C');
 	})
 });
